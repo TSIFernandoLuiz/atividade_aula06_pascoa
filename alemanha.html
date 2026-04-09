@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Páscoa na Alemanha - Tradições Germânicas</title>
+    <style>
+
+        :root {
+            --verde-escuro: #00291B;
+            --oliva: #6A7553;
+            --terracota: #944231;
+            --creme: #F0E6C2;
+            --texto: #2c2c2c;
+        }
+
+        body {
+            background-color: var(--creme);
+            color: var(--texto);
+            font-family: 'Trebuchet MS', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: var(--verde-escuro);
+            color: var(--creme);
+            padding: 30px;
+            text-align: center;
+        }
+
+        h1 { font-family: 'Georgia', serif; }
+
+        nav {
+            background-color: var(--oliva);
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: var(--creme);
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover { color: var(--terracota); }
+
+        main {
+            max-width: 850px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        h2 { color: var(--verde-escuro); border-bottom: 2px solid var(--terracota); }
+
+        p { text-align: justify; }
+
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        @media (max-width: 850px) {
+            .galeria {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .galeria {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .foto-container {
+            background: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .foto-container img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 3px;
+        }
+
+        .legenda {
+            font-size: 0.85rem;
+            color: var(--oliva);
+            margin-top: 8px;
+            font-style: italic;
+            text-align: center;
+        }
+
+        footer { text-align: center; padding: 20px; margin-top: 40px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Ostern: A Páscoa na Alemanha</h1>
+        <p style="text-align: center;">Berço de lendas e tradições que conquistaram o mundo</p>
+    </header>
+
+    <nav>
+        <a href="../index.html">Início</a>
+        <a href="alemanha.html">Alemanha</a>
+        <a href="australia.html">Austrália</a>
+        <a href="brasil.html">Brasil</a>
+        <a href="etiopia.html">Etiópia</a>
+        <a href="grecia.html">Grécia</a>
+    </nav>
+
+    <main>
+        <h2>Árvores Coloridas e o Fim do Inverno</h2>
+        <p>A Alemanha possui uma das celebrações de Páscoa mais ricas da Europa. Uma das tradições mais visuais é a <strong>Osterbaum</strong>, que consiste em decorar árvores nos jardins ou galhos dentro de casa com ovos pintados à mão. Essa prática simboliza a vida que brota com a chegada da primavera, transformando a paisagem após os meses de neve.</p>
+
+        <p>Outro evento marcante são as <em>Osterfeuer</em>, ou fogueiras de Páscoa. Grandes pilhas de madeira são queimadas em espaços públicos no sábado à noite ou na madrugada de domingo. O fogo serve para purificar o ambiente e "queimar" os restos do inverno, celebrando a vitória da luz sobre as trevas e do calor sobre o frio.</p>
+
+        <div class="galeria">
+            <div class="foto-container">
+                <img src="../assets/images/alemanha-bandeira.jpg" alt="Bandeira da Alemanha">
+                <p class="legenda">Bandeira Nacional da Alemanha</p>
+            </div>
+            <div class="foto-container">
+                <img src="../assets/images/alemanha-arvore.jpg" alt="Árvore decorada com ovos">
+                <p class="legenda">A tradicional Osterbaum</p>
+            </div>
+            <div class="foto-container">
+                <img src="../assets/images/alemanha-fogueira.jpeg" alt="Fogueira de Páscoa">
+                <p class="legenda">Osterfeuer: Fogueira comunitária</p>
+            </div>
+            <div class="foto-container">
+                <img src="../assets/images/alemanha-cordeiro.jpg" alt="Bolo de cordeiro">
+                <p class="legenda">Osterlamm: O bolo de cordeiro</p>
+            </div>
+        </div>
+
+        <p>Foi na Alemanha, por volta do século XVI, que surgiram os primeiros relatos do <em>Osterhase</em>, o Coelho da Páscoa. Segundo a lenda alemã, o coelhinho trazia ovos e doces para as crianças que se comportavam bem. Com a imigração alemã para outros países, essa tradição se espalhou globalmente, tornando-se o símbolo comercial mais forte da data hoje em dia.</p>
+
+        <p>Na culinária, o destaque vai para o pão trançado de Páscoa (Osterbrot) e o bolo em formato de cordeiro polvilhado com açúcar. As famílias costumam se reunir para um café da manhã reforçado no domingo, onde as crianças saem pelo jardim em busca de ovos escondidos, uma atividade que une gerações em torno da diversão e da renovação.</p>
+    </main>
+
+    <footer>
+        <p style="text-align: center;">🗿 Copyright &copy; 2026 - Explorando Tradições Globais 🗿</p>
+    </footer>
+
+</body>
+</html>

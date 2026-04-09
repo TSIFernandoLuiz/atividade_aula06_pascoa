@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Páscoa na Etiópia - A Fasika Ortodoxa</title>
+    <style>
+        :root {
+            --verde-escuro: #00291B;
+            --oliva: #6A7553;
+            --terracota: #944231;
+            --creme: #F0E6C2;
+            --texto: #2c2c2c;
+        }
+
+        body {
+            background-color: var(--creme);
+            color: var(--texto);
+            font-family: 'Trebuchet MS', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: var(--verde-escuro);
+            color: var(--creme);
+            padding: 30px;
+            text-align: center;
+        }
+
+        h1 { font-family: 'Georgia', serif; }
+
+        nav {
+            background-color: var(--oliva);
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: var(--creme);
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover { color: var(--terracota); }
+
+        main {
+            max-width: 850px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        h2 { color: var(--verde-escuro); border-bottom: 2px solid var(--terracota); }
+
+        p { text-align: justify; }
+
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        @media (max-width: 850px) {
+            .galeria { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (max-width: 480px) {
+            .galeria { grid-template-columns: 1fr; }
+        }
+
+        .foto-container {
+            background: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .foto-container img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 3px;
+        }
+
+        .legenda {
+            font-size: 0.85rem;
+            color: var(--oliva);
+            margin-top: 8px;
+            font-style: italic;
+            text-align: center;
+        }
+
+        footer { text-align: center; padding: 20px; margin-top: 40px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Fasika: A Páscoa na Etiópia</h1>
+        <p style="text-align: center;">Tradições milenares da Igreja Ortodoxa Etíope</p>
+    </header>
+
+    <nav>
+        <a href="../index.html">Início</a>
+        <a href="alemanha.html">Alemanha</a>
+        <a href="australia.html">Austrália</a>
+        <a href="brasil.html">Brasil</a>
+        <a href="etiopia.html">Etiópia</a>
+        <a href="grecia.html">Grécia</a>
+    </nav>
+
+    <main>
+        <h2>O Sacrifício do Grande Jejum</h2>
+        <p>Na Etiópia, a celebração da Páscoa, chamada de <strong>Fasika</strong>, é precedida por um dos períodos de jejum mais rigorosos do mundo cristão. Durante 55 dias, os fiéis ortodoxos abstêm-se totalmente de carne e derivados animais, realizando apenas uma refeição vegana por dia, geralmente após as 15h. Este período é focado em oração e purificação, preparando o espírito para a grande alegria da ressurreição.</p>
+
+        <p>A celebração atinge seu ápice na noite de sábado. Milhares de pessoas vestidas com o <em>habesha kemis</em> (trajes brancos de algodão com bordados coloridos) reúnem-se em igrejas esculpidas em rocha para uma vigília que dura toda a madrugada. Sob o som de tambores rítmicos e cânticos ancestrais em Ge'ez (língua litúrgica), os fiéis celebram com velas acesas até o amanhecer do domingo, quando o jejum é finalmente quebrado.</p>
+
+        <div class="galeria">
+            <div class="foto-container">
+                <img src="../assets/images/etiopia-bandeira.jpg" alt="Bandeira da Etiópia">
+                <p class="legenda">Bandeira Nacional da Etiópia</p>
+            </div>
+            <div class="foto-container">
+                <img src="../assets/images/etiopia-vigilia.webp" alt="Fiéis etíopes em vigília">
+                <p class="legenda">Vigília noturna em trajes brancos</p>
+            </div>
+            <div class="foto-container">
+                <img src="../assets/images/etiopia-doro-wat.webp" alt="Prato Doro Wat">
+                <p class="legenda">Doro Wat com pão Injera</p>
+            </div>
+            <div class="foto-container">
+                <img src="../assets/images/etiopia-igreja.webp" alt="Igreja de Lalibela">
+                <p class="legenda">Celebração em igrejas históricas</p>
+            </div>
+        </div>
+
+        <p>Após a missa matinal, as famílias voltam para casa para o banquete mais importante do ano. O prato central é o <em>Doro Wat</em>, um guisado de frango extremamente picante e suculento, que leva muitas horas para ser preparado e contém ovos cozidos inteiros. Este prato é servido sobre a <em>Injera</em>, uma massa fermentada gigante que serve tanto de base quanto de talher, já que os etíopes comem tradicionalmente com as mãos, compartilhando o mesmo prato.</p>
+
+        <p>A Fasika na Etiópia não é apenas uma data religiosa, mas um momento de profunda união comunitária. Vizinhos visitam uns aos outros para compartilhar pães caseiros e o tradicional café etíope em cerimônias que duram horas. É um tempo onde a hospitalidade etíope brilha, e a fartura do banquete simboliza a vitória da vida sobre a morte e a recompensa pela disciplina e fé demonstradas durante o longo jejum.</p>
+    </main>
+
+    <footer>
+        <p style="text-align: center;">🗿 Copyright &copy; 2026 - Explorando Tradições Globais 🗿</p>
+    </footer>
+
+</body>
+</html>

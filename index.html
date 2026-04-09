@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Páscoa ao Redor do Mundo</title>
+    <style>
+        :root {
+            --verde-escuro: #00291B;
+            --oliva: #6A7553;
+            --terracota: #944231;
+            --creme: #F0E6C2;
+            --texto: #2c2c2c;
+        }
+
+        body {
+            background-color: var(--creme);
+            color: var(--texto);
+            font-family: 'Trebuchet MS', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: var(--verde-escuro);
+            color: var(--creme);
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        h1 { font-family: 'Georgia', serif; font-size: 2.5rem; margin: 0; }
+
+        nav {
+            background-color: var(--oliva);
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: var(--creme);
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover { color: var(--terracota); }
+
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        p { text-align: justify; margin-bottom: 20px; }
+
+        .container-imagens {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+            gap: 15px;
+            margin: 30px 0;
+            justify-content: center;
+        }
+
+        @media (max-width: 880px) {
+            .container-imagens {
+        grid-template-columns: repeat(2, 1fr);
+            } 
+        }
+
+        .imagem-card {
+            background: white;
+            padding: 10px;
+            border: 1px solid var(--oliva);
+            width: 200px;
+        }
+
+        .imagem-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .imagem-card p {
+            font-size: 0.8rem;
+            text-align: center;
+            margin-top: 10px;
+            color: var(--oliva);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 2px solid var(--terracota);
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Tradições de Páscoa</h1>
+        <p style="text-align: center;">Uma viagem pelas celebrações e culturas do nosso planeta</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="pages/alemanha.html">Alemanha</a>
+        <a href="pages/australia.html">Austrália</a>
+        <a href="pages/brasil.html">Brasil</a>
+        <a href="pages/etiopia.html">Etiópia</a>
+        <a href="pages/grecia.html">Grécia</a>
+    </nav>
+
+    <main>
+        <h2>A Origem da Celebração</h2>
+        <p>A Páscoa é uma das festas mais antigas e importantes da humanidade, celebrando o renascimento e a vida. No contexto cristão, ela recorda a ressurreição de Jesus Cristo, mas suas raízes também se ligam ao "Pessach", a Páscoa judaica, que celebra a libertação do povo hebreu do Egito.</p>
+
+        <p>Além do aspecto religioso, a Páscoa está intrinsecamente ligada à chegada da primavera no Hemisfério Norte. Por isso, símbolos como o ovo e o coelho se tornaram tão populares: ambos representam a fertilidade e o despertar da natureza após o inverno rigoroso.</p>
+
+        <div class="container-imagens">
+            <div class="imagem-card">
+                <img src="assets/images/pascoa-geral-1.jpeg" alt="Cesta de ovos coloridos">
+                <p>Ovos: Símbolo milenar de vida</p>
+            </div>
+            <div class="imagem-card">
+                <img src="assets/images/pascoa-geral-2.webp" alt="Coelho no campo">
+                <p>O coelho e a fertilidade</p>
+            </div>
+            <div class="imagem-card">
+                <img src="assets/images/pascoa-geral-3.jpg" alt="Almoço de Páscoa">
+                <p>A união através da culinária</p>
+            </div>
+            <div class="imagem-card">
+                <img src="assets/images/pascoa-geral-4.webp" alt="Tradições antigas">
+                <p>Elementos rústicos da data</p>
+            </div>
+        </div>
+
+        <p>Curiosamente, cada país adaptou esses símbolos aos seus próprios costumes locais. Enquanto em alguns lugares a data é marcada por procissões silenciosas e introspecção, em outros ela é sinônimo de grandes banquetes, danças folclóricas e fogueiras comunitárias.</p>
+
+        <p>Navegue pelo nosso menu para descobrir como diferentes nações celebram este momento. Do calor das tradições brasileiras ao curioso "Bilby" australiano, cada página reserva uma descoberta sobre a diversidade cultural que nos une nesta época do ano.</p>
+    </main>
+
+    <footer>
+        <p style="text-align: center;">🗿 Copyright &copy; 2026 - Explorando Tradições Globais 🗿</p>
+    </footer>
+
+</body>
+</html>
